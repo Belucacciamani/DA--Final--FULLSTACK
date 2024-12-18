@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<main class="products-container">
+  <h1 class="products-title">{{globalText.produts}} DE CATEGORIA  {{categoryName}}</h1>
+
+  <div class="products-grid">
+    <div class="product-card"  *ngFor="let producto of listProdBYCategoria">
+
+      <img src="productos.webp" alt="Nombre del producto" class="product-image">
+      <h2 class="product-name">{{producto.product_name}}</h2>
+      <p class="product-description">{{producto.product_description}}</p>
+      <div class="product-details">
+        <span class="product-price">{{producto.product_price}}</span>
+        <span class="product-stock">{{producto.product_stock}}</span>
+        <span class="product-category">{{globalText.categories}} de: {{categoryName}}</span>
+      </div>
+      <button (click)="deleteProd(producto.id_product)" class="add-to-cart-btn">Eliminar</button>
+    </div>
+  </div>
+  <div class="center-button" >
+      <button  class="add-to-cart-btn"(click)="goToCreateProduct()">Agregar Nuevo producto de categoria {{categoryName}}</button>
+
+  </div>
+
+</main>
+
+<app-footer></app-footer>

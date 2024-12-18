@@ -1,0 +1,163 @@
+.intro-section {
+  display: flex;
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  align-items: center;
+  /* Centra el contenido verticalmente */
+
+  /* Reduce el padding */
+  background-color: rgba(255, 87, 34, 0.8);
+  color: rgb(241, 255, 240);
+  position: relative;
+  overflow: hidden;
+
+  /* Reducida la altura */
+  text-align: center;
+  /* Asegura que el texto esté centrado */
+}
+
+/* Contenedor de texto */
+.intro-text {
+  flex: 1;
+  max-width: 40%;
+  /* Ajusta el ancho máximo */
+  z-index: 2;
+  /* Asegura que el texto esté por encima de la imagen */
+}
+
+/* Títulos */
+.intro-text h1 {
+  font-size: 2rem;
+  /* Tamaño más pequeño */
+  margin-bottom: 10px;
+  /* Espacio reducido */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Párrafos */
+.intro-text p {
+  font-size: 1rem;
+  /* Reducir tamaño */
+  color: rgb(241, 255, 240);
+  margin-bottom: 10px;
+  /* Espacio reducido */
+}
+
+/* Contenedor de la imagen */
+.intro-image {
+  flex: 1;
+  max-width: 50%;
+  position: absolute;
+  /* Asegura que la imagen esté de fondo */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* Filtro de oscurecimiento */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  /* Opacidad en la imagen para mejorar la legibilidad */
+}
+
+/* Estilos adicionales para mejorar la experiencia en dispositivos móviles */
+@media (max-width: 768px) {
+
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    /* Ajustar altura para pantallas pequeñas */
+  }
+
+  .intro-image {
+    max-width: 100%;
+    height: 200px;
+    /* Reducir aún más la altura de la imagen */
+  }
+}
+
+.categories-section {
+  width: 100%;
+  text-align: center;
+}
+
+#listCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  /* Espacio entre las cards */
+  margin-top: 30px;
+}
+
+.cardd {
+  width: 200px;
+  /* Hacemos las cards más pequeñas */
+  height: 280px;
+  /* Ajustamos la altura */
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgb(54, 57, 59);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c3c3c3fe;
+  transition: all 0.3s ease;
+}
+
+.cardd:hover {
+  box-shadow: 0 5px 20px rgba(20, 20, 20, 0.3);
+  transform: translateY(-5px);
+}
+
+.cardd img {
+  width: 100%;
+  height: 150px;
+  /* Reducimos la altura de la imagen */
+  object-fit: cover;
+}
+
+.category-info {
+  text-align: center;
+  padding: 10px;
+}
+
+.category-info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.category-info button {
+  background-color: #111213;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.category-info button:hover {
+  background-color: #77797b;
+}
+.subheader{
+ color: white;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ text-align: center;}

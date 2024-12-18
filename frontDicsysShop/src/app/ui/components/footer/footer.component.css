@@ -1,0 +1,58 @@
+footer {
+  background-color: rgba(255, 105, 0, 0.7);
+  color: rgb(241, 255, 240);
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  /* Asegura que el pie de página ocupe todo el ancho */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  /* Centra los elementos dentro del footer */
+  align-items: center;
+  flex-direction: column;
+  /* Organiza los elementos verticalmente */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  /* Asegura que el contenido no se quede pequeño */
+}
+
+.footer-left,
+.footer-right {
+  width: 100%;
+  /* Asegura que ambos lados ocupen todo el ancho disponible */
+  text-align: center;
+  /* Centra los elementos dentro de cada contenedor */
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  /* Centra los elementos de la lista */
+}
+
+.footer-right ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-right ul li a {
+  color: rgb(241, 255, 240);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}

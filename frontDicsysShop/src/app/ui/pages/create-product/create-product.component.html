@@ -1,0 +1,64 @@
+<!-- <app-header></app-header>
+
+<div class="form-container">
+  <h1>Agregar Producto en la categoría: {{ categoryName }}</h1>
+
+  <form [formGroup]="productForm" (ngSubmit)="addProduct()">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" formControlName="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descripción</label>
+      <input type="text" id="description" formControlName="description" required />
+    </div>
+
+    <div class="form-group">
+      <label for="price">Precio</label>
+      <input type="number" id="price" formControlName="price" required />
+    </div>
+
+    <div class="form-group">
+      <label for="stock">Stock</label>
+      <input type="number" id="stock" formControlName="stock" required />
+    </div>
+
+    <button type="submit" class="btn-submit" [disabled]="productForm.invalid">Agregar Producto</button>
+  </form>
+</div>
+<app-footer> -->
+
+
+<app-header></app-header>
+
+<div class="form-container">
+  <h1>Agregar Producto en la categoría: {{ categoryName }}</h1>
+
+  <form [formGroup]="productForm" (ngSubmit)="addProduct()">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" formControlName="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descripción</label>
+      <input type="text" id="description" formControlName="description" required />
+    </div>
+
+    <div class="form-group">
+      <label for="price">Precio</label>
+      <input type="number" id="price" formControlName="price" required />
+    </div>
+
+    <div class="form-group">
+      <label for="stock">Stock</label>
+      <input type="number" id="stock" formControlName="stock" required />
+    </div>
+
+    <button type="submit" class="btn-submit" [disabled]="productForm.invalid">Agregar Producto</button>
+  </form>
+</div>
+
+<app-footer></app-footer>
+

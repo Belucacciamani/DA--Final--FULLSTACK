@@ -1,0 +1,98 @@
+/* src/app/ui/components/header/header.component.css */
+
+/* Estilo general para el header */
+.header {
+  background-color: rgba(255, 87, 34, 0.8);
+  /* Fondo con un tono de naranja transparente */
+  color: rgb(241, 255, 240);
+  /* Blanco suave para el texto */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  /* Centra el contenido dentro del header */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave para profundidad */
+  position: sticky;
+  /* Hace que el header quede fijo al hacer scroll */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Asegura que el header esté encima de otros elementos */
+}
+
+/* Contenedor central que agrupa el logo y el menú */
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  /* Limitar el ancho del contenedor */
+  max-width: 1200px;
+  /* Máximo ancho para pantallas grandes */
+}
+
+/* Estilo del logo */
+#logo {
+  font-family: 'Poppins', sans-serif;
+  /* Fuente estilizada para el logo */
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#brand {
+  color: rgb(15, 13, 13);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Estilo para el menú de navegación */
+#menu {
+  font-family: 'Roboto', sans-serif;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  /* Espacio entre los elementos */
+}
+
+#menu ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(241, 255, 240);
+  /* Color blanco suave */
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre los elementos del menú */
+#menu ul li:hover {
+  color: #f3e7e4a3;
+  /* Tono más oscuro de naranja */
+  transform: scale(1.5);
+  /* Efecto de aumento en el hover */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  /* Se apilan los elementos verticalmente en pantallas pequeñas */
+  .center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #menu ul li {
+    font-size: 1rem;
+  }
+}

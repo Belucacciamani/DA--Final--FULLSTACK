@@ -1,0 +1,92 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-details span {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  margin-top: 20px;
+  /* Agrega un margen superior si es necesario */
+}
+
+.add-to-cart-btn {
+  background-color: #ede8e6;
+  /* Un color atractivo para el botón */
+  color: #222121;
+  /* Color del texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1d1c1c;
+  color: #ddd;
+  /* Cambia el color al pasar el mouse */
+}
+.products-title {
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  font-family: 'Poppins', sans-serif;
+  /* Fuente elegante y moderna */
+  font-size: 2.5rem;
+  /* Tamaño grande para destacar */
+  color: #0b0a0a;
+  /* Color oscuro para el texto */
+  margin-top: 20px;
+  /* Un pequeño margen superior */
+  font-weight: 600;
+  /* Peso medio para que se vea robusto */
+}
+
+/* Opcional: fuente adicional, puedes agregarla en tu archivo HTML si no la tienes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');

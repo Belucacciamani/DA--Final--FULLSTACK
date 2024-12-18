@@ -1,0 +1,31 @@
+  <app-header></app-header>
+
+  <main class="home-main">
+    <!-- Sección de bienvenida -->
+  <section class="intro-section">
+    <div class="intro-text">
+      <h1>{{this.globalText.homeWelcome}}</h1>
+      <p>{{this.globalText.homeIntro}}</p>
+    </div>
+  </section>
+
+
+    <!-- Sección de categorías -->
+    <section class="categories-section">
+      <h1 class="subheader">{{ globalText.ourCategories }}</h1>
+      <div id="listCards">
+        <div class="cardd" *ngFor="let categoria of   categories">
+          <div class="category-image">
+            <img src="tienda.webp" alt="comida" />
+          </div>
+          <div class="category-info">
+
+            <h3>{{categoria.category_name }}</h3>
+            <button (click)="browseProducts(categoria)"> {{globalText.SeeProducts}}</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
