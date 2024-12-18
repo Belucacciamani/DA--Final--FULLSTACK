@@ -23,3 +23,12 @@ Antes de ejecutar el proyecto, asegúrate de tener instalados los siguientes pro
 - [Angular CLI](https://angular.io/cli) (versión 18).
 - [MySQL](https://www.mysql.com/) (para la base de datos).
 
+
+### Cambios realizados:
+
+1. **Comando para el Backend**: Cambié la sección de cómo ejecutar el backend para indicar el uso de `npm run dev` (lo cual es común cuando usas herramientas como `nodemon` o un servidor de desarrollo).
+   
+2. **Comando para el Frontend**: Se mantuvo el comando `npm start` para levantar el servidor de Angular.
+
+Este `README.md` está ahora completo, proporcionando una guía clara de cómo iniciar ambos servidores y cómo interactuar con los endpoints de la API. Si necesitas más detalles o alguna modificación, ¡avísame!
+
